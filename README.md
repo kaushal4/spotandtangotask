@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Challenge for [Spot and Tango](https://spotandtango.com/)
 
-## Getting Started
+## Task description
 
-First, run the development server:
+### 📌 Project Scope & Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Tech Stack**: Use vanilla HTML, CSS, and JavaScript or a framework (React, Vue, or Angular)—whichever you're most comfortable with.
+* **Data Source**: Fetch product data from this JSON endpoint:
+  * https://s3.us-east-1.amazonaws.com/assets.spotandtango/products.json
+* **Time Limit:** Spend no more than 2-3 hours focusing on a clean and functional design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Core Feature #1 — Display Product Listings
+* Fetch and display all available products from the JSON endpoint.
+* Show the following details for each product: Name, Category (Laptop, Tablet, Mobile, Accessory), MSRP (original price), and sales price
+* If a product is unavailable (sold out), disable selection and display a "Sold Out" indicator.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Core Feature #2 — Shopping Cart Functionality
+* Allow users to add multiple products to their cart.
+* Users should be able to choose quantities for each item.
+* Dynamically update the total cost as items are added.
+* Show a cart summary listing selected items.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 💡 Bonus (Optional Enhancements)
+* Style the interface to improve UX/UI.
+* Consider adding a category filter (e.g., show only "Laptops" or "Accessories")
 
-## Learn More
+## Implementation
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Sample Look of implementation](sampleLook.png)
