@@ -1,0 +1,32 @@
+.productGrid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.productGrid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.productListContainer {
+  padding: 1rem;
+}
+
+.productListContainer h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
